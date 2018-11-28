@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+/// Returns `YES` in case method has `void` return type.
+BOOL RX_is_method_with_description_void(struct objc_method_description method);
+
+/// Extracts arguments for `invocation`.
+NSArray * __nonnull RX_extract_arguments(NSInvocation * __nonnull invocation);
+
+/// Returns `YES` in case methodSignature has `void` return type.
+BOOL RX_is_method_signature_void(NSMethodSignature * __nonnull methodSignature);
+
 #if !DISABLE_SWIZZLING
 
 /**
@@ -86,15 +95,6 @@ void * __nonnull RX_reference_from_selector(SEL __nonnull selector);
 
 /// Ensures interceptor is installed on target object.
 IMP __nullable RX_ensure_observing(id __nonnull target, SEL __nonnull selector, NSError *__autoreleasing __nullable * __nullable error);
-
-/// Extracts arguments for `invocation`.
-NSArray * __nonnull RX_extract_arguments(NSInvocation * __nonnull invocation);
-
-/// Returns `YES` in case method has `void` return type.
-BOOL RX_is_method_with_description_void(struct objc_method_description method);
-
-/// Returns `YES` in case methodSignature has `void` return type.
-BOOL RX_is_method_signature_void(NSMethodSignature * __nonnull methodSignature);
 
 /// Default value for `RXInterceptionObserver.targetImplementation`.
 IMP __nonnull RX_default_target_implementation(void);
