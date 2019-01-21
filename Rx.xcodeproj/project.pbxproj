@@ -774,6 +774,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1E39FC5B21F5B918008E6236 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8A56ACE1AD7424700B4673B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8A56AD61AD7424700B4673B;
+			remoteInfo = RxSwift;
+		};
+		1E39FC5D21F5B94B008E6236 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8A56ACE1AD7424700B4673B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C80938F51B8A71760088E94D;
+			remoteInfo = RxCocoa;
+		};
 		C8165AC521891B5800494BEF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C8A56ACE1AD7424700B4673B /* Project object */;
@@ -2594,6 +2608,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				1E39FC5E21F5B94B008E6236 /* PBXTargetDependency */,
+				1E39FC5C21F5B918008E6236 /* PBXTargetDependency */,
 			);
 			name = Microoptimizations;
 			productName = PerformanceTests;
@@ -3635,6 +3651,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1E39FC5C21F5B918008E6236 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8A56AD61AD7424700B4673B /* RxSwift */;
+			targetProxy = 1E39FC5B21F5B918008E6236 /* PBXContainerItemProxy */;
+		};
+		1E39FC5E21F5B94B008E6236 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C80938F51B8A71760088E94D /* RxCocoa */;
+			targetProxy = 1E39FC5D21F5B94B008E6236 /* PBXContainerItemProxy */;
+		};
 		C8165AC621891B5800494BEF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C8165ABB21891AFF00494BEF /* RxAtomic */;
