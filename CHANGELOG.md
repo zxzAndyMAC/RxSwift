@@ -2,7 +2,9 @@
 All notable changes to this project will be documented in this file.
 
 ---
-## Master
+## [5.0.0](https://github.com/ReactiveX/RxSwift/releases/tag/5.0.0)
+
+* RxSwift 5 now requires Xcode 10.2 (or the Swift 5 compiler on Linux).
 
 ### Anomalies
 
